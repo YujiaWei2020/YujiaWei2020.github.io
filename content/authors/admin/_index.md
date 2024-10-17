@@ -13,7 +13,7 @@ superuser: true
 highlight_name: true
 
 # Role/position/tagline
-role: Research Fellow in Multiphysics
+role: Research Fellow in MultiPhysics
 
 # Organizations/Affiliations to display in Biography blox
 organizations:
@@ -33,16 +33,16 @@ profiles:
   - icon: brands/github
     url: https://github.com/gcushen
   - icon: brands/linkedin
-    url: https://www.linkedin.com/
+    url: https://www.linkedin.com/in/yujia-wei-47720b231/
   - icon: academicons/google-scholar
-    url: https://scholar.google.com/
+    url: https://scholar.google.com/citations?user=Zjb9VTwAAAAJ&hl=en&oi=sra/
   - icon: academicons/orcid
-    url: https://orcid.org/
+    url: https://orcid.org/0000-0002-5186-6141/
 
 interests:
-  - Artificial Intelligence
-  - Computational
-  - Information Retrieval
+  - Fluid Structure Interaction
+  - Computational Fluid Dynamics
+  - Deep Learning
 
 education:
   - area: PhD Artificial Intelligence
