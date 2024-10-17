@@ -25,16 +25,16 @@ publishDate: '2017-01-01T00:00:00Z'
 publication_types: ['paper-conference']
 
 # Publication name and optional abbreviated publication name.
-publication: In *Hugo Blox Builder Conference*
-publication_short: In *ICW*
+publication: In *American Society of Mechanical Engineers
+publication_short: In *OMAE*
 
-abstract: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis posuere tellus ac convallis placerat. Proin tincidunt magna sed ex sollicitudin condimentum. Sed ac faucibus dolor, scelerisque sollicitudin nisi. Cras purus urna, suscipit quis sapien eu, pulvinar tempor diam. Quisque risus orci, mollis id ante sit amet, gravida egestas nisl. Sed ac tempus magna. Proin in dui enim. Donec condimentum, sem id dapibus fringilla, tellus enim condimentum arcu, nec volutpat est felis vel metus. Vestibulum sit amet erat at nulla eleifend gravida.
+abstract: Commercial vessels have recently shown a common trend in increasing their sizes to meet the growing demand for transportation and operations. This trend may however result in more flexible or ‘softer’ hulls. The flexible hull structure reduces the ship natural frequency close to the wave encounter frequency, increasing the probability of resonance or high-frequency vibrations. Meanwhile, the resulting structural deformations from flexible hull could significantly affect the flow field and the hydrodynamic loads cannot be estimated accurately. Hence, it is important to treat a flexible hull and its surrounding flow field as an interacting system to predict a ship’s dynamic behaviour based on the hydroelastic theory. In this study, a novel fluid-structure interactions coupling scheme using the “preCICE” library to communicate with the fluid solver “OpenFOAM” and structure solver “calculiX” was first proposed to study the hydroelastic behavior of a container ship with a forward speed in regular waves. With the advantage of this numerical model, the flexible behaviour of this ship, such as its vertical bending displacement and corresponding bending moment can be quantified, and the “springing” and “whipping” responses can be calculated. It is believed that the present FSI model will exhibit more advantages over the traditional rigid-body methods currently used in the ship seakeeping field.
 
 # Summary. An optional shortened abstract.
-summary: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis posuere tellus ac convallis placerat. Proin tincidunt magna sed ex sollicitudin condimentum.
+summary: First FSI model using preCICE connect OpenFOAM and Calculix for ship hydroelasticity analysis.
 
 tags:
-  - Large Language Models
+  - FSI
 
 # Display this page in the Featured widget?
 featured: true
@@ -45,13 +45,13 @@ featured: true
 #   url: http://example.org
 
 url_pdf: ''
-url_code: 'https://github.com/HugoBlox/hugo-blox-builder'
-url_dataset: 'https://github.com/HugoBlox/hugo-blox-builder'
+url_code: 'https://asmedigitalcollection.asme.org/OMAE/proceedings-abstract/OMAE2022/V007T08A035/1148005'
+url_dataset: ''
 url_poster: ''
 url_project: ''
 url_slides: ''
-url_source: 'https://github.com/HugoBlox/hugo-blox-builder'
-url_video: 'https://youtube.com'
+url_source: ''
+url_video: ''
 
 # Featured image
 # To use, add an image named `featured.jpg/png` to your page's folder.
