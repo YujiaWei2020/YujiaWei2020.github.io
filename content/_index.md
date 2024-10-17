@@ -32,14 +32,18 @@ sections:
           parallax: false
   - block: markdown
     content:
-      title: '📚 My Research'
+      title: '📚 My Research Output'
       subtitle: ''
       text: |-
-        Use this area to speak to your mission. I'm a research scientist in the Moonshot team at DeepMind. I blog about machine learning, deep learning, and moonshots.
+        I've had the pleasure of contributing to the scientific community through my research:
 
-        I apply a range of qualitative and quantitative methods to comprehensively investigate the role of science and technology in the economy.
+        - Published 10 journal papers as first author in publications including Renewable Energy, Marine Structures, Ocean Engineering, and Physics of Fluids
+        - Collaborated with experienced researchers as a co-author on additional publications
+        - Secured research grants exceeding £10,000
+        - Recognized as a future leader in GFIL research
         
-        Please reach out to collaborate 😃
+        I'm always excited about new collaborations! If you have ideas for joint publications or funding proposals, let's connect and explore the possibilities together. 🤝
+        Feel free to reach out - I'm looking forward to potential collaborations!
     design:
       columns: '1'
   - block: collection
