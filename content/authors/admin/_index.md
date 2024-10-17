@@ -176,8 +176,8 @@ awards:
 
 ## About Me
 
-I am a Research Fellow in Multiphysics at the School of Aerospace, Transport and Manufacturing (SATM) at Cranfield University. My previous research in Fluid structure interaction, fluid dynamics and renewable energy, resulting in ten journals as first author in Renewable Energy, Marine Structures, Ocean Engineering, and Physics of Fluids. I am strongly interested in solving engineering and physics problems related to energies, structures, and fluids. I am especially fascinated by their interactions and sustainability. While my expertise lies in the offshore/ocean industry, I am well-versed in high-fidelity modelling techniques (BEM,CFD,FEA,FSI), allowing me to tackle challenges with precision and accuracy.
+Hello, I'm a Research Fellow in Multiphysics at Cranfield University's School of Aerospace, Transport and Manufacturing (SATM). My research background is in Fluid Structure Interaction and computational fluid dynamics, with years of experience using OpenFOAM. 
 
+Recently, I've become interested in AI-driven fluid dynamics, which is now the focus of my work. This portfolio showcases my ongoing research, including recent publications, tutorials, and blog posts related to this exciting field.
 
- He was awarded as future leader with funding from GFIL Future Frontiers Fund for his innovative sustainable research.
 
