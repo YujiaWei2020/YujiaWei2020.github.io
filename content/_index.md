@@ -35,7 +35,7 @@ sections:
       title: '📚 My Research Output'
       subtitle: ''
       text: |-
-        - Published 10 journal papers as first author in publications including Renewable Energy, Marine Structures, Ocean Engineering, and Physics of Fluids
+        - Published 10 journal papers as first author in Renewable Energy, Marine Structures, Ocean Engineering, and Physics of Fluids
         - Collaborated with experienced researchers as a co-author on additional publications
         - Secured research grants exceeding £10,000
         - Recognized as a future leader in GFIL research
