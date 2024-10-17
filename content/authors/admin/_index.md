@@ -176,4 +176,6 @@ awards:
 
 ## About Me
 
-Chien Shiung Wu is a professor of artificial intelligence at the Stanford AI Lab. Her research interests include distributed robotics, mobile computing and programmable matter. She leads the Robotic Neurobiology group, which develops self-reconfiguring robots, systems of self-organizing robots, and mobile sensor networks.
+Yujia Wei is a Research Fellow in Multiphysics and Computer Vision at the School of Aerospace, Transport and Manufacturing (SATM) at Cranfield University, an Editor for the United Nations’ marine environment assessment and a peer-reviewer for journals such as Ocean Engineering and ASME. He graduated from the University of Strathclyde (UOS) with a background in the flexible fluid-structure interaction of marine structures, ship hydroelasticity, and wave-structure interaction. He has published eight published journals as first author in the journal of Renewable Energy, Marine Structures, Ocean Engineering, and Physics of Fluids. He was awarded as future leader with funding from GFIL Future Frontiers Fund for his innovative sustainable research.
+
+I am strongly interested in solving engineering and physics problems related to energies, structures, and fluids. I am especially fascinated by their interactions and sustainability. While my expertise lies in the offshore/ocean industry, I am well-versed in high-fidelity modelling techniques (BEM,CFD,FEA,FSI), allowing me to tackle challenges with precision and accuracy.
