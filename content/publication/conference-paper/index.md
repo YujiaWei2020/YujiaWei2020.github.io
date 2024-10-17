@@ -1,12 +1,12 @@
 ---
-title: 'An example conference paper'
+title: 'A fluid-structure interaction model on the hydroelastic analysis of a container ship using PRECICE'
 
 # Authors
 # If you created a profile for a user (e.g. the default `admin` user), write the username (folder name) here
 # and it will be replaced with their full name and linked to their profile.
 authors:
   - admin
-  - Robert Ford
+  - Tahsin Tezdogan
 
 # Author notes (optional)
 author_notes:
