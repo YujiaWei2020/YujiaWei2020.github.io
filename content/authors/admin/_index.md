@@ -178,6 +178,6 @@ awards:
 
 Hello, I'm a Research Fellow in Multiphysics at Cranfield University's School of Aerospace, Transport and Manufacturing (SATM). My research background is in Fluid Structure Interaction and computational fluid dynamics, with years of experience using OpenFOAM. 
 
-Recently, I've become interested in AI-driven fluid dynamics, which is now the focus of my work. This portfolio showcases my ongoing research, including recent publications, tutorials, and blog posts related to this exciting field.
+Recently, I've become interested in AI-driven fluid dynamics, which is now the focus of my work. This portfolio showcases my ongoing research, recent publications, tutorials, and blog posts and funding applications. If you are interested about my work, do not hesitate to contact!
 
 
