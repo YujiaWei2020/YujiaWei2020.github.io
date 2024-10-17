@@ -24,14 +24,14 @@ organizations:
 # Need to use another icon? Simply download the SVG icon to your `assets/media/icons/` folder.
 profiles:
   - icon: at-symbol
-    url: 'mailto:your-email@example.com'
+    url: 'yujia.wei@cranfield.ac.uk'
     label: E-mail Me
   - icon: brands/x
     url: https://twitter.com/GetResearchDev
   - icon: brands/instagram
     url: https://www.instagram.com/
   - icon: brands/github
-    url: https://github.com/gcushen
+    url: https://github.com/YujiaWei2020/
   - icon: brands/linkedin
     url: https://www.linkedin.com/in/yujia-wei-47720b231/
   - icon: academicons/google-scholar
@@ -45,15 +45,15 @@ interests:
   - Deep Learning
 
 education:
-  - area: PhD Artificial Intelligence
-    institution: Stanford University
-    date_start: 2016-01-01
-    date_end: 2020-12-31
+  - area: PhD Fluid Structure Interaction
+    institution: University of Strathclyde
+    date_start: 2019-10-01
+    date_end: 2023-03-31
     summary: |
-      Thesis on _Why LLMs are awesome_. Supervised by [Prof Joe Smith](https://example.com). Presented papers at 5 IEEE conferences with the contributions being published in 2 Springer journals.
+      Thesis on Fluid-structure interaction models on the hydroelastic analysis of containerships in waves. Presented papers at OMAE19 conference, being published in Marine Structures and Ocean Engineering.
     button:
       text: 'Read Thesis'
-      url: 'https://example.com'
+      url: 'https://stax.strath.ac.uk/concern/theses/c534fp60d'
   - area: MEng Artificial Intelligence
     institution: Massachusetts Institute of Technology
     date_start: 2016-01-01
@@ -103,9 +103,9 @@ work:
 # Skills
 # Add your own SVG icons to `assets/media/icons/`
 skills:
-  - name: Technical Skills
+  - name: Computational Skills
     items:
-      - name: Python
+      - name: OpenFOAM
         description: ''
         percent: 80
         icon: code-bracket
@@ -176,6 +176,6 @@ awards:
 
 ## About Me
 
-Yujia Wei is a Research Fellow in Multiphysics and Computer Vision at the School of Aerospace, Transport and Manufacturing (SATM) at Cranfield University, an Editor for the United Nations’ marine environment assessment and a peer-reviewer for journals such as Ocean Engineering and ASME. He graduated from the University of Strathclyde (UOS) with a background in the flexible fluid-structure interaction of marine structures, ship hydroelasticity, and wave-structure interaction. He has published eight published journals as first author in the journal of Renewable Energy, Marine Structures, Ocean Engineering, and Physics of Fluids. He was awarded as future leader with funding from GFIL Future Frontiers Fund for his innovative sustainable research.
+Yujia Wei is a Research Fellow in Multiphysics and Computer Vision at the School of Aerospace, Transport and Manufacturing (SATM) at Cranfield University, an Editor for the United Nations’ marine environment assessment and a peer-reviewer for journals such as Ocean Engineering and ASME. He has published eight journals as first author in the journal of Renewable Energy, Marine Structures, Ocean Engineering, and Physics of Fluids. He was awarded as future leader with funding from GFIL Future Frontiers Fund for his innovative sustainable research.
 
 I am strongly interested in solving engineering and physics problems related to energies, structures, and fluids. I am especially fascinated by their interactions and sustainability. While my expertise lies in the offshore/ocean industry, I am well-versed in high-fidelity modelling techniques (BEM,CFD,FEA,FSI), allowing me to tackle challenges with precision and accuracy.
