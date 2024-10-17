@@ -176,8 +176,8 @@ awards:
 
 ## About Me
 
-Yujia Wei is a Research Fellow in Multiphysics at the School of Aerospace, Transport and Manufacturing (SATM) at Cranfield University. 
+I am a Research Fellow in Multiphysics at the School of Aerospace, Transport and Manufacturing (SATM) at Cranfield University. My previous research in Fluid structure interaction, fluid dynamics and renewable energy, resulting in ten journals as first author in Renewable Energy, Marine Structures, Ocean Engineering, and Physics of Fluids. I am strongly interested in solving engineering and physics problems related to energies, structures, and fluids. I am especially fascinated by their interactions and sustainability. While my expertise lies in the offshore/ocean industry, I am well-versed in high-fidelity modelling techniques (BEM,CFD,FEA,FSI), allowing me to tackle challenges with precision and accuracy.
 
-, an Editor for the United Nations’ marine environment assessment and a peer-reviewer for journals such as Ocean Engineering and ASME. He has published eight journals as first author in the journal of Renewable Energy, Marine Structures, Ocean Engineering, and Physics of Fluids. He was awarded as future leader with funding from GFIL Future Frontiers Fund for his innovative sustainable research.
 
-I am strongly interested in solving engineering and physics problems related to energies, structures, and fluids. I am especially fascinated by their interactions and sustainability. While my expertise lies in the offshore/ocean industry, I am well-versed in high-fidelity modelling techniques (BEM,CFD,FEA,FSI), allowing me to tackle challenges with precision and accuracy.
+ He was awarded as future leader with funding from GFIL Future Frontiers Fund for his innovative sustainable research.
+
