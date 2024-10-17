@@ -39,7 +39,8 @@ sections:
         - Collaborated with experienced researchers as a co-author on additional publications
         - Secured research grants exceeding £10,000
         - Recognized as a future leader in GFIL research
-        Feel free to reach out - I'm looking forward to potential collaborations! 🤝
+
+        Feel free to reach out, looking forward to collaborations! 🤝
     design:
       columns: '1'
   - block: collection
