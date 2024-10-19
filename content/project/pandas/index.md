@@ -1,7 +1,7 @@
 ---
 title: meshgraphnet in pytorch
 date: 2023-10-26
-external_link: https://github.com/pandas-dev/pandas
+external_link: https://github.com/YujiaWei2020/Meshgraphnet_pytorch/tree/main
 tags:
   - GNN
   - pytorch
