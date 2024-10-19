@@ -1,13 +1,18 @@
 ---
-title: Pandas
+title: meshgraphnet in pytorch
 date: 2023-10-26
 external_link: https://github.com/pandas-dev/pandas
 tags:
-  - Hugo
-  - Wowchemy
-  - Markdown
+  - GNN
+  - pytorch
 ---
 
-Flexible and powerful data analysis / manipulation library for Python, providing labeled data structures.
+I have reimplemented MeshGraphNet, originally written in TensorFlow, using PyTorch. 
+
+includes three benchmark cases to demonstrate its effectiveness:
+
+- Deformed flag simulation
+- Transient computational fluid dynamics (CFD)
+- Deformed plate analysis
 
 <!--more-->
