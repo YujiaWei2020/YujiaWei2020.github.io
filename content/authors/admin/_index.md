@@ -54,31 +54,22 @@ education:
     button:
       text: 'Read Thesis'
       url: 'https://stax.strath.ac.uk/concern/theses/c534fp60d'
-  - area: MEng Artificial Intelligence
-    institution: Massachusetts Institute of Technology
-    date_start: 2016-01-01
-    date_end: 2020-12-31
+  - area: MSC Naval Architecture and Ocean Engineering
+    institution: University of Strathclyde
+    date_start: 2018-09-01
+    date_end: 2019-09-01
     summary: |
-      GPA: 3.8/4.0
-
-      Courses included:
-      - lorem ipsum dolor sit amet, consectetur adipiscing elit
-      - lorem ipsum dolor sit amet, consectetur adipiscing elit
-      - lorem ipsum dolor sit amet, consectetur adipiscing elit
-  - area: BSc Artificial Intelligence
-    institution: Massachusetts Institute of Technology
-    date_start: 2016-01-01
-    date_end: 2020-12-31
+      GPA: Distinction
+  - area: BEng Naval Architecture and Ocean Engineering
+    institution: University of Strathclyde
+    date_start: 2017-09-01
+    date_end: 2015-09-01
     summary: |
-      GPA: 3.4/4.0
+      GPA: Honor
       
-      Courses included:
-      - lorem ipsum dolor sit amet, consectetur adipiscing elit
-      - lorem ipsum dolor sit amet, consectetur adipiscing elit
-      - lorem ipsum dolor sit amet, consectetur adipiscing elit
 work:
-  - position: Director of Cloud Infrastructure
-    company_name: GenCoin
+  - position: Research Fellow
+    company_name: Cranfield University
     company_url: ''
     company_logo: ''
     date_start: 2021-01-01
