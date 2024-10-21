@@ -94,9 +94,9 @@ work:
 # Skills
 # Add your own SVG icons to `assets/media/icons/`
 skills:
-  - name: Computational Skills
+  - name: Skills
     items:
-      - name: OpenFOAM
+      - name: Computation modelling
         description: ''
         percent: 80
         icon: code-bracket
@@ -104,7 +104,7 @@ skills:
         description: ''
         percent: 100
         icon: chart-bar
-      - name: SQL
+      - name: Python, C++
         description: ''
         percent: 40
         icon: circle-stack
@@ -116,11 +116,11 @@ skills:
         description: ''
         percent: 60
         icon: person-simple-walk
-      - name: Cats
+      - name: Dogs
         description: ''
         percent: 100
-        icon: cat
-      - name: Photography
+        icon: dog
+      - name: Workout
         description: ''
         percent: 80
         icon: camera
