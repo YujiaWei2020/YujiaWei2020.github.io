@@ -7,7 +7,7 @@ tags:
   - pytorch
 ---
 
-I have reimplemented MeshGraphNet, originally written in TensorFlow, using PyTorch. 
+Reimplemented MeshGraphNet using PyTorch (originally written in TensorFlow). 
 
 includes three benchmark cases to demonstrate its effectiveness:
 
