@@ -17,15 +17,15 @@ main:
     # url: /#papers
     url: publication/
     weight: 11
-  # - name: Talks
-  #   url: /#talks
-  #   weight: 12
-  # - name: Projects
-  #   url: projects/
-  #   weight: 30
   - name: Teaching
     url: teaching/
     weight: 40
   - name: Funding
     url: /#news
     weight: 13
+  # - name: Talks
+  #   url: /#talks
+  #   weight: 12
+  # - name: Projects
+  #   url: projects/
+  #   weight: 30
