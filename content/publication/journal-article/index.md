@@ -2,7 +2,7 @@
 title: "A fully coupled CFD-DMB approach on the ship hydroelasticity of a containership in extreme wave conditions"
 authors:
 - admin
-- Incecik, Atilla, Tezdogan, Tahsin
+- Incecik, Atilla, Tezdogan Tahsin
 author_notes:
 - "Equal contribution"
 - "Equal contribution"
