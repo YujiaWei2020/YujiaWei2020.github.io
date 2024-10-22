@@ -34,8 +34,8 @@ featured: false
 # - name: ""
 #   url: ""
 url_pdf: https://www.mdpi.com/2077-1312/10/11/1778
-url_code: 'https://www.mdpi.com/2077-1312/10/11/1778'
-url_dataset: 'https://www.mdpi.com/2077-1312/10/11/1778'
+url_code: ''
+url_dataset: ''
 url_poster: ''
 url_project: ''
 url_slides: ''
