@@ -46,11 +46,11 @@ sections:
   - block: collection
     id: papers
     content:
-      title: Featured Publications
+      title: Recent projects
       filters:
         folders:
-          - publication
-        featured_only: true
+          - project
+        featured_only: False
     design:
       view: article-grid
       columns: 2
