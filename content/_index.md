@@ -46,7 +46,7 @@ sections:
   - block: collection
     id: papers
     content:
-      title: Recent projects
+      title: My recent projects
       filters:
         folders:
           - project
