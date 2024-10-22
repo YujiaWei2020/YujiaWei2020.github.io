@@ -72,24 +72,36 @@ work:
     company_name: Cranfield University
     company_url: ''
     company_logo: ''
-    date_start: 2021-01-01
+    date_start: 2024-03-01
     date_end: ''
     summary: |2-
       Responsibilities include:
-      - lorem ipsum dolor sit amet, consectetur adipiscing elit
-      - lorem ipsum dolor sit amet, consectetur adipiscing elit
-      - lorem ipsum dolor sit amet, consectetur adipiscing elit
-  - position: Backend Software Engineer
-    company_name: X
+      - Working for project 'LANDOne' (Cranfield-Airbus)
+      - Develop robust AI tool to foster intelligent computation
+      - AI driven fluid dynamics, digital twin
+  - position: Research Fellow
+    company_name: Cranfield University
+    company_url: ''
+    company_logo: ''
+    date_start: 2023-03-01
+    date_end: 2024-03-01
+    summary: |
+      Responsibilities include:
+      - Working for project 'Solar2Wave' (Cranfield-Helirex)
+      - Develop computational model to simulate floating solar array relocation to offshore sites
+      - Multibody hydrodynamic, resonance, structure dynamics
+  - position: Research Assistance
+    company_name: University of Strathclyde
     company_url: ''
     company_logo: ''
     date_start: 2016-01-01
     date_end: 2020-12-31
     summary: |
       Responsibilities include:
-      - Migrated infrastructure to a new data center
-      - lorem ipsum dolor sit amet, consectetur adipiscing elit
-      - lorem ipsum dolor sit amet, consectetur adipiscing elit
+      - Working for project 'Solar2Wave' (Cranfield-Helirex)
+      - 
+      - Multibody hydrodynamic, resonace, structure dynamics
+
 
 # Skills
 # Add your own SVG icons to `assets/media/icons/`
