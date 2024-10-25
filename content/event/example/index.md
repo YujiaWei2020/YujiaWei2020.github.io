@@ -1,7 +1,7 @@
 ---
 title: Crash course on Finite Element Method
 
-event: Teaching session (8-hours)
+event: Teaching session
 event_url: 
 
 location: Cranfield University
