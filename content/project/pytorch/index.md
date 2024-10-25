@@ -1,13 +1,15 @@
 ---
-title: PyTorch
-date: 2023-10-26
-external_link: https://github.com/pytorch/pytorch
+title: FSI-cylinderflap
+date: 2024-10-26
+external_link: https://github.com/YujiaWei2020/cylinderflap
 tags:
-  - Hugo
-  - Wowchemy
-  - Markdown
+  - DeepLearning
+  - FSI
+  - Fluid prediction
 ---
 
-PyTorch is a Python package that provides tensor computation (like NumPy) with strong GPU acceleration.
+AI accelerated fluid structure interaction model, with the benchmark study on cylinder flap. 
+
+Gifs and testing files will upload soon.
 
 <!--more-->
