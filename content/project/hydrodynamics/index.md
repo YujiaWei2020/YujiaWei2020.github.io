@@ -1,5 +1,6 @@
 ---
 title: Ship hydrodynamics
+featured: false
 date: 2021-10-26
 external_link: https://github.com/YujiaWei2020/openfoam_ship_hydrodynamics/tree/main
 tags:
