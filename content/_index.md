@@ -50,7 +50,7 @@ sections:
       filters:
         folders:
           - project
-        featured_only: False
+        featured_only: true
     design:
       view: article-grid
       columns: 2
