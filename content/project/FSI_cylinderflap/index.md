@@ -1,5 +1,5 @@
 ---
-title: FSI-cylinderflap
+title: AI-FSI-cylinderflap
 featured: true
 date: 2024-10-21
 external_link: https://github.com/YujiaWei2020/cylinderflap
