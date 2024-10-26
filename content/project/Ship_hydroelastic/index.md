@@ -11,6 +11,6 @@ tags:
 Hydroelastic interactions of up to seven deforming FlexWECs with the
 surrounding wave fields are demonstrated through systematic simulation cases.
 
-
+![alt text](image.png)
 
 <!--more-->
