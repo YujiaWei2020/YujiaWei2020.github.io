@@ -13,6 +13,7 @@ sections:
     content:
       title: Selected Projects
       text: Sum of projects I am working around. 
+      count: 0
       filters:
         folders:
           - project
