@@ -2,17 +2,16 @@
 title: Publications
 cms_exclude: true
 
-# View
+# Listing view
 view: citation
 
-# Pagination
-page_type: publication
-count: 0
-offset: 0
-limit: -1  # Set to -1 to show all items
-
-# Optional header image (relative to `static/media/` folder).
+# Optional banner image (relative to `static/media/` folder).
 banner:
   caption: ''
   image: ''
+
+# Disable pagination
+_build:
+  render: always
+  list: never
 ---
