@@ -31,13 +31,7 @@ links:
 - name: Custom Link
   url: http://example.org
 url_pdf: https://www.researchgate.net/publication/383025145_Design_optimization_for_an_oleo-pneumatic_shock_absorber_based_on_a_hybrid_GA-NN_model
-url_code: ''
-url_dataset: '#'
-url_poster: '#'
-url_project: ''
-url_slides: ''
-url_source: '#'
-url_video: '#'
+
 
 # Featured image
 # To use, add an image named `featured.jpg/png` to your page's folder. 
