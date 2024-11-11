@@ -7,7 +7,7 @@ view: citation
 
 # Pagination
 page_type: publication
-count: false
+count: 0
 offset: 0
 limit: -1  # Set to -1 to show all items
 
