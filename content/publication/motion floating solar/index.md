@@ -1,5 +1,5 @@
 ---
-title: "Motion characteristics of a modularized floating solar farm in waves"
+title: "A hydroelasticity analysis of a damaged ship based on a two-way coupled CFD-DMB method"
 authors:
 - admin
 author_notes:
@@ -17,14 +17,13 @@ publishDate: "2023-10-01T00:00:00Z"
 publication_types: ["article-journal"]
 
 # Publication name and optional abbreviated publication name.
-publication: "*Physics of Fluids, 34*(3)"
+publication: "*Ocean Engineeering, 93*(11)"
 publication_short: ""
 
-abstract: Modularized floating solar farms exhibit the potential to replace conventional steel-frame ones, effectively remedying hydroelastic issues of a very large floating structure through discrete modules with mechanical connections. However, the response of the discrete modules under cyclic wave loading has not been fully understood. This paper assesses the motion characteristics and expansibility of modularized floaters in waves, based on computational results from fluid–structural interaction simulations. A crucial factor, denoted as the ratio of frame length to wavelength 
-⁠, is determined to predict the motions of a large floating solar system in head waves. Results indicate that the motion characteristics is predictable based on the R value. The empirical relationship between the R value and the motion of every unit in an array is analyzed. In particular, the results calculated from using the multiple-rigid-bodies method are also compared with those from using the single-large-hydroelastic-body method, and it was found that these two results are similar when R > 1. This similarity allows for predicting the multi-hinged bodies' behavior in waves through a simplified hydroelastic approach. Overall, this study reports insights that are useful for the design and optimization of modularized solar farms and can help address cyclic loading and motion concerns for long-term durability.
+abstract: This study focuses on the numerical investigation of the hull girder loads on a flexible containership S175 with intact and damaged conditions advancing in regular head waves. In this study, a two-way coupled fluid-structure interactions framework is applied, in which the interactions between the flooding water inside the damaged tanks and wave fields are modelled by a Computational Fluid Dynamics toolbox OpenFOAM. The structural deformation is predicted using a multibody solver MBDyn. Hydroelasticity computations are performed for two different damage scenarios. The numerical results obtained show that the damaged ship experiences less vertical motions but greater global wave loads than the intact ship. It is also demonstrated that ship damages greatly influence the hull girder vertical bending moments (VBMs), while still water VBM is sensitive to the added weight from flooding water. In specific ship-damage conditions, local hogging moments at several amidship sections are found to exceed the limits specified by international regulations. Therefore, a new safety factor is recommended to avoid hogging moments of damaged ships remain below the limiting value. The results can also be used to determine whether the damaged ship will experience secondary damage due to hydroelastic response, helping with the design of future conventional ships.
 
 # Summary. An optional shortened abstract.
-summary:  Photovoltaics, Solar panels, Computational models, Computational fluid dynamics, Laminar flows, Surface waves
+summary:  Fluid structure interactionDamaged shipsShip hydroelasticityComputational fluid dynamicsShip longitudinal strength analysis
 
 tags:
 - Source Themes
@@ -33,7 +32,7 @@ featured: false
 # links:
 # - name: ""
 #   url: ""
-url_pdf: https://pubs.aip.org/aip/pof/article-abstract/36/3/033320/3269846/Motion-characteristics-of-a-modularized-floating?redirectedFrom=fulltext
+url_pdf: https://www.mdpi.com/2077-1312/10/11/1778
 
 # Featured image
 # To use, add an image named `featured.jpg/png` to your page's folder. 
