@@ -34,7 +34,7 @@ featured: false
 # links:
 # - name: ""
 #   url: ""
-url_pdf: https://www.sciencedirect.com/science/article/pii/S0029801823030020
+url_pdf: https://www.sciencedirect.com/science/article/pii/S0360544224026793
 
 # Featured image
 # To use, add an image named `featured.jpg/png` to your page's folder. 
