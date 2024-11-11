@@ -1,7 +1,9 @@
 ---
-title: "Motion characteristics of a modularized floating solar farm in waves"
+title: "A hydroelasticity analysis of a damaged ship based on a two-way coupled CFD-DMB method"
 authors:
 - admin
+- Atilla Incecik
+- Tahsin Tezdogan
 author_notes:
 - "Equal contribution"
 - "Equal contribution"
@@ -17,13 +19,13 @@ publishDate: "2023-10-01T00:00:00Z"
 publication_types: ["article-journal"]
 
 # Publication name and optional abbreviated publication name.
-publication: "*Physics of Fluids, 34*(3)"
+publication: "*Ocean Engineering, 274*(3)"
 publication_short: ""
 
 abstract: This study focuses on the numerical investigation of the hull girder loads on a flexible containership S175 with intact and damaged conditions advancing in regular head waves. In this study, a two-way coupled fluid-structure interactions framework is applied, in which the interactions between the flooding water inside the damaged tanks and wave fields are modelled by a Computational Fluid Dynamics toolbox OpenFOAM. The structural deformation is predicted using a multibody solver MBDyn. Hydroelasticity computations are performed for two different damage scenarios. The numerical results obtained show that the damaged ship experiences less vertical motions but greater global wave loads than the intact ship. It is also demonstrated that ship damages greatly influence the hull girder vertical bending moments (VBMs), while still water VBM is sensitive to the added weight from flooding water.
 
 # Summary. An optional shortened abstract.
-summary:  Photovoltaics, Solar panels, Computational models, Computational fluid dynamics, Laminar flows, Surface waves
+summary:  Fluid structure interactionDamaged shipsShip hydroelasticityComputational fluid dynamicsShip longitudinal strength analysis
 
 tags:
 - Source Themes
@@ -32,7 +34,7 @@ featured: false
 # links:
 # - name: ""
 #   url: ""
-url_pdf: https://pubs.aip.org/aip/pof/article-abstract/36/3/033320/3269846/Motion-characteristics-of-a-modularized-floating?redirectedFrom=fulltext
+url_pdf: https://www.sciencedirect.com/science/article/pii/S0029801823004596
 
 # Featured image
 # To use, add an image named `featured.jpg/png` to your page's folder. 
