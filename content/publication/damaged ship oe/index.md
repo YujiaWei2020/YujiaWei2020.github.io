@@ -20,7 +20,7 @@ publication_types: ["article-journal"]
 publication: "*Physics of Fluids, 34*(3)"
 publication_short: ""
 
-abstract: 
+abstract: This study focuses on the numerical investigation of the hull girder loads on a flexible containership S175 with intact and damaged conditions advancing in regular head waves. In this study, a two-way coupled fluid-structure interactions framework is applied, in which the interactions between the flooding water inside the damaged tanks and wave fields are modelled by a Computational Fluid Dynamics toolbox OpenFOAM. The structural deformation is predicted using a multibody solver MBDyn. Hydroelasticity computations are performed for two different damage scenarios. The numerical results obtained show that the damaged ship experiences less vertical motions but greater global wave loads than the intact ship. It is also demonstrated that ship damages greatly influence the hull girder vertical bending moments (VBMs), while still water VBM is sensitive to the added weight from flooding water.
 
 # Summary. An optional shortened abstract.
 summary:  Photovoltaics, Solar panels, Computational models, Computational fluid dynamics, Laminar flows, Surface waves
