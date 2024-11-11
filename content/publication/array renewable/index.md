@@ -1,8 +1,8 @@
 ---
-title: "Array analysis on a seawall type of deformable wave energy converters"
+title: "Hydrodynamic analysis of a heave-hinge wave energy converter combined with a floating breakwater"
 authors:
 - admin
-- Chao Wang, Wenchuang Chen, Luofeng Huang
+- Yu, S., Li, X., Zhang, C., Ning, D., & Huang, L.
 author_notes:
 - "Equal contribution"
 - "Equal contribution"
@@ -18,13 +18,13 @@ publishDate: "2023-10-01T00:00:00Z"
 publication_types: ["article-journal"]
 
 # Publication name and optional abbreviated publication name.
-publication: "*Renewable Energy, 225*(3)"
+publication: "*Ocean Engineering, 293*(3)"
 publication_short: ""
 
-abstract: There has been a significant interest in developing Flexible Wave Energy Converters (FlexWECs) that utilise structural deformations to generate electricity and mitigate destructive wave loads to the devices. In the meantime, FlexWECs are most likely to operate in an array format to enhance space usage and power output, as well as provide convenience for maintenance. In this context, the present paper develops a high-fidelity computational model to investigate the interaction of ocean surface waves with an array of seawall-type FlexWECs, which can meanwhile serve coastal engineering purposes. The fluid field is solved using the Navier-Stokes equations, and structural deformations are predicted using a nonlinear finite-element method. Hydroelastic interactions of up to seven deforming FlexWECs with the surrounding wave fields are demonstrated through systematic simulation cases.
+abstract: Research interest in breakwater design has increased recently due to the impetus to develop marine renewable energy systems, as breakwaters can be retrofitted to harness wave energy at the same time as attenuating it. This study investigates a novel system of attaching a hinge baffle under a floating breakwater. The floating breakwater itself acts as a heaving wave energy converter, and meanwhile the hinge rotation provides a second mechanism for wave energy harnessing. A computational model with multi-body dynamics was established to study this system, and a series of simulations were conducted in various wave conditions. Both wave attenuation performance and energy conversion ratio were studied, using an interdisciplinary approach considering both coastal engineering and renewable energy. In particular, the performance of the proposed system is compared with contemporary floating breakwater designs to demonstrate its advantage. Overall, a useful simulation framework with multi-body dynamics is presented and the simulation results provide valuable insights into the design of combined wave energy and breakwater systems.
 
 # Summary. An optional shortened abstract.
-summary:  Wave farmFlexible wave energy converterHydroelasticityFluid-structure interactionComputational fluid dynamicsMultiple deformable structures in waves
+summary:  Floating breakwater Wave energy converter Fluid-structure interaction HydrodynamicsMulti-body dynamics OpenFOAM
 
 tags:
 - Source Themes
@@ -33,7 +33,7 @@ featured: false
 # links:
 # - name: ""
 #   url: ""
-url_pdf: https://www.sciencedirect.com/science/article/pii/S0960148124004099
+url_pdf: https://www.sciencedirect.com/science/article/pii/S0029801823030020
 
 # Featured image
 # To use, add an image named `featured.jpg/png` to your page's folder. 
