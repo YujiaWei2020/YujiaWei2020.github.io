@@ -20,8 +20,7 @@ publication_types: ["article-journal"]
 publication: "*Physics of Fluids, 34*(3)"
 publication_short: ""
 
-abstract: Modularized floating solar farms exhibit the potential to replace conventional steel-frame ones, effectively remedying hydroelastic issues of a very large floating structure through discrete modules with mechanical connections. However, the response of the discrete modules under cyclic wave loading has not been fully understood. This paper assesses the motion characteristics and expansibility of modularized floaters in waves, based on computational results from fluid–structural interaction simulations. A crucial factor, denoted as the ratio of frame length to wavelength 
-⁠, is determined to predict the motions of a large floating solar system in head waves. Results indicate that the motion characteristics is predictable based on the R value. The empirical relationship between the R value and the motion of every unit in an array is analyzed. In particular, the results calculated from using the multiple-rigid-bodies method are also compared with those from using the single-large-hydroelastic-body method, and it was found that these two results are similar when R > 1. This similarity allows for predicting the multi-hinged bodies' behavior in waves through a simplified hydroelastic approach. Overall, this study reports insights that are useful for the design and optimization of modularized solar farms and can help address cyclic loading and motion concerns for long-term durability.
+abstract: 
 
 # Summary. An optional shortened abstract.
 summary:  Photovoltaics, Solar panels, Computational models, Computational fluid dynamics, Laminar flows, Surface waves
