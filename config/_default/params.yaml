@@ -58,3 +58,9 @@ features:
     enable: false
   privacy_pack:
     enable: false
+
+features:
+  publications:
+    pagination: false
+    count: true
+    items_per_page: 0
