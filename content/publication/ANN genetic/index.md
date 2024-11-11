@@ -28,8 +28,8 @@ tags:
 featured: false
 
 links:
-- name: Custom Link
-  url: http://example.org
+- name: Cite
+  url: https://www.researchgate.net/publication/383025145_Design_optimization_for_an_oleo-pneumatic_shock_absorber_based_on_a_hybrid_GA-NN_model
 url_pdf: https://www.researchgate.net/publication/383025145_Design_optimization_for_an_oleo-pneumatic_shock_absorber_based_on_a_hybrid_GA-NN_model
 
 
