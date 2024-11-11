@@ -2,6 +2,15 @@
 title: "A hydroelasticity analysis of a damaged ship based on a two-way coupled CFD-DMB method"
 authors:
 - admin
+- Zou, Detai 
+- Zhang, Deqing 
+- Zhang, Chao
+- Ou, Binjian
+- Riyadi, Soegeng
+- Utama, IKAP 
+- Hetharia, Wolter 
+- Wood, Tim  
+- Huang, Luofeng
 author_notes:
 - "Equal contribution"
 - "Equal contribution"
