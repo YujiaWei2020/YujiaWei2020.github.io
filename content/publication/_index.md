@@ -5,8 +5,11 @@ cms_exclude: true
 # View
 view: citation
 
-# Show all items on one page
-items_per_page: 0
+# Pagination
+page_type: publication
+count: false
+offset: 0
+limit: -1  # Set to -1 to show all items
 
 # Optional header image (relative to `static/media/` folder).
 banner:
