@@ -13,12 +13,12 @@ superuser: true
 highlight_name: true
 
 # Role/position/tagline
-role: Research Fellow in MultiPhysics
+role: Senior CFD-AI Engineer
 
 # Organizations/Affiliations to display in Biography blox
 organizations:
-  - name: Cranfield University
-    url: https://www.cranfield.ac.uk/centres/centre-for-computational-engineering-sciences/
+  - name: Severn Trent Water
+    url: ''
 
 # Social network links
 # Need to use another icon? Simply download the SVG icon to your `assets/media/icons/` folder.
@@ -68,28 +68,41 @@ education:
       GPA: Honor
       
 work:
-  - position: Research Fellow
-    company_name: Cranfield University
+  - position: Senior CFD-AI Engineer
+    company_name: Severn Trent Water
     company_url: ''
     company_logo: ''
-    date_start: 2024-03-01
+    date_start: 2025-03-01
     date_end: ''
     summary: |2-
-      Responsibilities include:
-      - Working for project 'LANDOne' (Cranfield-Airbus)
-      - Develop robust AI tool to foster intelligent computation
-      - AI driven fluid dynamics, digital twin
+      - Designed and built STverse, a modular CFD-AI platform spanning the full simulation-to-deployment stack: geometry ingestion, automated CFD orchestration, data pipeline and validation, surrogate model training, and production inference.
+      - Architected a fully automated CFD batch runner with parallel cloud sweeps; failed or non-converged cases are automatically quarantined, with uncertainty quantification to minimise high-fidelity data acquisition costs.
+      - Established MLOps workflows for dataset and surrogate-model versioning and production inference monitoring.
+      - Geometry optimisation pipelines delivered 24% efficiency gains on contact tanks and 40% on settlement tanks; Qt-based interface enables non-specialists to run full optimisation workflows without CFD expertise.
+      - Led the technical design team and mentored graduate engineers on surrogate model design and physics-informed ML research.
+      - Stack: Python, PyTorch, OpenFOAM, VTK, PyVista, SLURM, AWS, Qt, MLflow
+  - position: Developer – AI4CFD FreeCAD Module
+    company_name: Open Source / Independent
+    company_url: ''
+    company_logo: ''
+    date_start: 2025-01-01
+    date_end: ''
+    summary: |2-
+      - Built and maintain "AI4CFD", the first open-source CFD-AI module for the FreeCAD framework, covering geometry preprocessing, batch simulation runners, surrogate AI training, inference, and design optimisation.
+      - Implemented point-cloud and graph-based deep learning algorithms preserving mesh connectivity for geometry-invariant training; training pipelines support distributed GPU execution with live monitoring via Weights & Biases.
+      - Designed a shared geometry/data interface supporting CFD, FEA, and particle-simulation workflows, with plug-in compatibility across solvers (OpenFOAM, CalculiX, ANSYS FLUENT, DualSPHysics).
+      - Applied to pipe-layout optimisation for data-centre cooling (University of Oxford) and underwater airfoil optimisation for a marine design company.
   - position: Research Fellow
-    company_name: Cranfield University
+    company_name: Cranfield University – Airbus Digital
     company_url: ''
     company_logo: ''
     date_start: 2023-03-01
-    date_end: 2024-03-01
-    summary: |
-      Responsibilities include:
-      - Working for project 'Solar2Wave' (Cranfield-Helirex)
-      - Develop computational model to simulate floating solar array relocation to offshore sites
-      - Multibody hydrodynamic, resonance, structure dynamics
+    date_end: 2025-03-01
+    summary: |2-
+      - Contributed to multiphase CFD modelling for aircraft landing processes within the Airbus Digital LandOne programme, running simulations on HPC clusters for large parametric sweeps.
+      - Developed machine-learning surrogates trained on Airbus experimental datasets to characterise extreme operating conditions across landing gear systems.
+      - Deployed digital twin systems coupling surrogate models with live test data for design-space exploration and manufacturing risk reduction.
+      - Conducted FEA stress and fatigue analysis across hybrid material configurations, achieving over 30% rigidity improvement.
   - position: Research Assistance
     company_name: University of Strathclyde
     company_url: ''
@@ -97,7 +110,6 @@ work:
     date_start: 2020-06-01
     date_end: 2022-12-31
     summary: |
-      Responsibilities include:
       - Hydrodynamic analysis of offshore platform
 
 
@@ -176,8 +188,8 @@ awards:
 
 ## About Me
 
-Hello, I'm a Research Fellow in Multiphysics at Cranfield University's School of Aerospace, Transport and Manufacturing (SATM). My research background is in Fluid Structure Interaction and computational fluid dynamics, with years of experience using OpenFOAM. 
+Hello, I'm a Senior CFD-AI Engineer at Severn Trent Water, building production-grade physics-informed AI platforms for engineering simulation. My background spans Fluid Structure Interaction, computational fluid dynamics (OpenFOAM), and deep learning, with a PhD from the University of Strathclyde and postdoctoral research at Cranfield University in collaboration with Airbus Digital.
 
-Recently, I've become interested in AI-driven fluid dynamics, which is now the focus of my work. This portfolio showcases my ongoing research, recent publications, tutorials, and blog posts and funding applications. If you are interested about my work, do not hesitate to contact!
+I also develop AI4CFD, the first open-source CFD-AI module for FreeCAD, making physics-informed AI accessible to the broader engineering community. This portfolio showcases my projects, publications, and open-source contributions. Feel free to get in touch!
 
 
