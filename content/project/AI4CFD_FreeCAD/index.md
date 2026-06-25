@@ -19,3 +19,7 @@ Key features:
 4. Real-time CFD result visualization within FreeCAD
 
 <!--more-->
+
+## Design Space Exploration
+
+{{< video src="design space exploration.mp4" controls="yes" >}}
