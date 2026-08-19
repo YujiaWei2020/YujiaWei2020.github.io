@@ -20,6 +20,10 @@ This project delivers the world's first open-source physical AI software embedde
 
 <!--more-->
 
+## Roadmap
+
+![CFD-AI Module in FreeCAD roadmap](featured.png)
+
 ## Features
 
 - **Physics-informed AI** — surrogate model trained on CFD results for fast hydrodynamic prediction
@@ -54,6 +58,10 @@ On Windows:
 ## Airfoil Design Exploration
 
 ![Airfoil design space exploration](airfoils.gif)
+
+## Manifold CFD Example
+
+![Manifold CFD mesh in FreeCAD](profile.png)
 
 ## Design Space Exploration
 
