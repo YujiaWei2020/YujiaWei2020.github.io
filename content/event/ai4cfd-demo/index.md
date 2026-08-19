@@ -26,6 +26,10 @@ tags:
 # Is this a featured talk? (true/false)
 featured: false
 
+image:
+  caption: ''
+  focal_point: Center
+
 url_video: 'https://www.youtube.com/watch?v=0pIovv9IgwQ'
 
 # Projects (optional).
