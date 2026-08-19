@@ -36,7 +36,7 @@ Here's the idea: you define a baseline geometry and the parameters you want to v
 
 ## Software UI
 
-I put real effort into the interface so it's approachable — you shouldn't need a machine-learning background to train your first AI surrogate model.
+I put effort into the interface so it's approachable — you shouldn't need a machine-learning background to train your first AI surrogate model.
 
 ![Software UI](profile.png)
 
