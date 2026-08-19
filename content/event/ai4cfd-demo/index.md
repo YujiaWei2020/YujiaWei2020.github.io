@@ -1,6 +1,9 @@
 ---
 title: AI4CFD 3min Demo
 
+# Clicking the card image/title jumps straight to the video instead of this page.
+external_link: 'https://www.youtube.com/watch?v=0pIovv9IgwQ'
+
 event: AI4CFD Module in FreeCAD
 event_url: https://www.youtube.com/watch?v=0pIovv9IgwQ
 
