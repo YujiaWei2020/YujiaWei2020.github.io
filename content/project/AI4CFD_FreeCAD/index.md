@@ -7,18 +7,50 @@ tags:
   - CFD
   - FreeCAD
   - DeepLearning
+
+image:
+  caption: ''
+  focal_point: Center
+  # Only used as the card/list thumbnail; the single page shows the repo details below instead.
+  preview_only: true
+
+url_code: 'https://github.com/YujiaWei2020/AI4CFD-freecad'
 ---
 
-AI-powered CFD module integrated into FreeCAD for intelligent simulation preprocessing, solver assistance, and post-processing.
-
-Key features:
-
-1. AI-assisted mesh generation and refinement
-2. Deep learning surrogate models for flow field prediction
-3. Automated boundary condition recommendation
-4. Real-time CFD result visualization within FreeCAD
+AI-driven design space search with CFD simulation, built on top of [FreeCAD](https://www.freecad.org/). Automatically explores design parameters and uses physics-informed AI to find optimal geometries through CFD analysis.
 
 <!--more-->
+
+## Features
+
+- **Physics-informed AI** — surrogate model trained on CFD results for fast hydrodynamic prediction
+- **Automated design space search** — explores geometric parameters to find optimal configurations
+- **FreeCAD integration** — runs entirely within the FreeCAD environment, no external solver setup required
+
+## Requirements
+
+- [FreeCAD](https://www.freecad.org/) 1.00+
+- Python 3.12+
+
+## Installation
+
+```bash
+git clone https://github.com/YujiaWei2020/AI4CFD-freecad.git
+```
+
+On Windows:
+
+1. Go to the `freecad_addon` folder
+2. Double-click `install.bat`
+3. The installer automatically searches for your Python environment (3.12.x); if not found, install Python manually
+4. All requirements are then installed automatically
+
+## Usage
+
+1. Open **FreeCAD**
+2. Find the AI4CFD module under your addon manager
+3. Set your working directory
+4. Add design parameters and run CFD batches
 
 ## Design Space Exploration
 
