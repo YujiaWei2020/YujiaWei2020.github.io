@@ -1,0 +1,6 @@
+/* Let article body text fill the page width instead of being capped at the
+   Tailwind Typography default of ~65ch, which reads as an oddly narrow column
+   on wide screens. */
+article .prose {
+  max-width: none;
+}
