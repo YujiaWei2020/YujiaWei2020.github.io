@@ -16,11 +16,15 @@ image:
 
 url_code: 'https://github.com/YujiaWei2020/AI4CFD-freecad'
 ---
-This project delivers the world's first open-source physical AI software embedded directly within FreeCAD. Designed to be user-friendly, it's built to support any CFD project.
+I believe this is the first open-source physical-AI toolkit embedded directly inside FreeCAD. I built it to be genuinely user-friendly — approachable enough to drop into any CFD project, not just the ones I had in mind when I wrote it.
 
 <!--more-->
 
-## Roadmap
+## Why This Exists
+
+High-fidelity CFD is powerful, but it's slow — a single run can take hours, which makes it a poor fit for design optimization, where you need to evaluate hundreds of variants to find the best one. That's the bottleneck this project is built to remove, using a deep-learning surrogate model in place of the slow inner loop.
+
+Here's the idea: you define a baseline geometry and the parameters you want to vary, and the pipeline automatically batches out the CFD simulations for you. Those results become the training data for a supervised model that learns to predict the flow field directly. Accuracy is tracked against a held-out test set, so the model holds up whether you're interpolating within the design space or pushing out toward its edges — and once it's trained, a prediction comes back in well under a second, regardless of how complex the underlying model is.
 
 ![CFD-AI Module in FreeCAD roadmap](featured.png)
 
@@ -30,39 +34,30 @@ This project delivers the world's first open-source physical AI software embedde
 - **Automated design space search** — explores geometric parameters to find optimal configurations
 - **FreeCAD integration** — runs entirely within the FreeCAD environment, no external solver setup required
 
-## Requirements
+## Software UI
 
-- [FreeCAD](https://www.freecad.org/) 1.00+
-- Python 3.12+
+I put real effort into the interface so it's approachable — you shouldn't need a machine-learning background to train your first AI surrogate model.
 
-## Installation
+![Software UI](profile.png)
 
-```bash
-git clone https://github.com/YujiaWei2020/AI4CFD-freecad.git
-```
+## Geometry Variation
 
-On Windows:
+Thousands of geometry variations can be generated automatically with generative AI — including shapes an engineer probably wouldn't think to draw by hand (myself included). These variations become the baseline geometries that get batched through CFD automatically, giving the model solid ground-truth data to learn from.
 
-1. Go to the `freecad_addon` folder
-2. Double-click `install.bat`
-3. The installer automatically searches for your Python environment (3.12.x); if not found, install Python manually
-4. All requirements are then installed automatically
+![Airfoil geometry exploration](airfoils.gif)
 
-## Usage
+## Deep Learning Model
 
-1. Open **FreeCAD**
-2. Find the AI4CFD module under your addon manager
-3. Set your working directory
-4. Add design parameters and run CFD batches
+Under the hood, the software ships with several state-of-the-art architectures baked in — the Transolver family, AB-UPT, and Point-Mamba among them. Fine-tune whichever one fits your problem best and see what works for you. *(Proper citations for these to be added here.)*
 
-## Airfoil Design Exploration
+## Inference
 
-![Airfoil design space exploration](airfoils.gif)
-
-## Manifold CFD Example
-
-![Manifold CFD mesh in FreeCAD](profile.png)
-
-## Design Space Exploration
+Once trained, the surrogate model can predict flow fields for brand-new geometry in seconds, no matter how unusual the shape looks. Speed and accuracy together are really the whole point of going down the AI route in the first place.
 
 {{< video src="design space exploration.mp4" controls="yes" >}}
+
+## Software Demo
+
+I've also put together a short walkthrough showing the software in action:
+
+{{< youtube 0pIovv9IgwQ >}}
