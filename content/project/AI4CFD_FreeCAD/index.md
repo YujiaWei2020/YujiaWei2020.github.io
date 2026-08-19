@@ -16,8 +16,7 @@ image:
 
 url_code: 'https://github.com/YujiaWei2020/AI4CFD-freecad'
 ---
-
-AI-driven design space search with CFD simulation, built on top of [FreeCAD](https://www.freecad.org/). Automatically explores design parameters and uses physics-informed AI to find optimal geometries through CFD analysis.
+This project delivers the world's first open-source physical AI software embedded directly within FreeCAD. Designed to be user-friendly, it's built to support any CFD project.
 
 <!--more-->
 
@@ -51,6 +50,10 @@ On Windows:
 2. Find the AI4CFD module under your addon manager
 3. Set your working directory
 4. Add design parameters and run CFD batches
+
+## Airfoil Design Exploration
+
+![Airfoil design space exploration](airfoils.gif)
 
 ## Design Space Exploration
 
