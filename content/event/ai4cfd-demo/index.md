@@ -1,9 +1,6 @@
 ---
 title: AI4CFD 3min Demo
 
-# Clicking the card image/title jumps straight to the video instead of this page.
-external_link: 'https://www.youtube.com/watch?v=0pIovv9IgwQ'
-
 event: AI4CFD Module in FreeCAD
 event_url: https://www.youtube.com/watch?v=0pIovv9IgwQ
 
@@ -32,6 +29,8 @@ featured: false
 image:
   caption: ''
   focal_point: Center
+  # Only used as the card/list thumbnail; the embedded player below replaces it on this page.
+  preview_only: true
 
 url_video: 'https://www.youtube.com/watch?v=0pIovv9IgwQ'
 
@@ -43,3 +42,5 @@ url_video: 'https://www.youtube.com/watch?v=0pIovv9IgwQ'
 projects:
   - AI4CFD_FreeCAD
 ---
+
+{{< youtube 0pIovv9IgwQ >}}
