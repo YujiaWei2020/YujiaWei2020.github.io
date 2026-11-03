@@ -1,0 +1,165 @@
+{{/* Interactive DPM particle calculator. JavaScript port of dpm_particle_calculator.py in the page bundle. */}}
+<div class="dpm-calc not-prose" id="dpm-calc">
+  <style>
+    .dpm-calc { --dpm-border: rgba(127,127,127,.35); --dpm-muted: rgba(127,127,127,.12); font-size: .95rem; margin: 1.5rem 0; }
+    .dpm-calc fieldset { border: 1px solid var(--dpm-border); border-radius: .5rem; padding: .75rem 1rem 1rem; margin: 0 0 1rem; }
+    .dpm-calc legend { font-weight: 600; padding: 0 .4rem; }
+    .dpm-calc .dpm-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(190px, 1fr)); gap: .75rem 1rem; }
+    .dpm-calc label { display: flex; flex-direction: column; gap: .25rem; font-size: .85rem; }
+    .dpm-calc input { width: 100%; padding: .35rem .5rem; border: 1px solid var(--dpm-border); border-radius: .35rem; background: transparent; color: inherit; font: inherit; }
+    .dpm-calc input:focus { outline: 2px solid #3b82f6; outline-offset: -1px; }
+    .dpm-calc button { padding: .3rem .75rem; border: 1px solid var(--dpm-border); border-radius: .35rem; background: var(--dpm-muted); color: inherit; font: inherit; font-size: .85rem; cursor: pointer; }
+    .dpm-calc button:hover { border-color: #3b82f6; }
+    .dpm-calc .dpm-row { display: grid; grid-template-columns: 1fr 1fr auto; gap: .5rem; align-items: end; margin-bottom: .5rem; }
+    .dpm-calc table { width: 100%; border-collapse: collapse; margin: .25rem 0 1rem; font-variant-numeric: tabular-nums; }
+    .dpm-calc th, .dpm-calc td { border-bottom: 1px solid var(--dpm-border); padding: .4rem .5rem; text-align: right; }
+    .dpm-calc th:first-child, .dpm-calc td:first-child { text-align: left; }
+    .dpm-calc thead th { background: var(--dpm-muted); font-weight: 600; }
+    .dpm-calc tr.dpm-total td { font-weight: 600; }
+    .dpm-calc .dpm-error { color: #dc2626; font-weight: 600; margin: .5rem 0; }
+    .dpm-calc .dpm-summary { display: grid; grid-template-columns: repeat(auto-fill, minmax(170px, 1fr)); gap: .75rem; margin-bottom: 1rem; }
+    .dpm-calc .dpm-stat { border: 1px solid var(--dpm-border); border-radius: .5rem; padding: .6rem .8rem; }
+    .dpm-calc .dpm-stat span { display: block; font-size: .75rem; opacity: .75; }
+    .dpm-calc .dpm-stat strong { font-size: 1.1rem; font-variant-numeric: tabular-nums; }
+    .dpm-calc h4 { font-weight: 600; margin: .75rem 0 .25rem; }
+    .dpm-calc .dpm-table-wrap { overflow-x: auto; }
+  </style>
+
+  <fieldset>
+    <legend>Injection</legend>
+    <div class="dpm-grid">
+      <label>Start time (s)<input type="number" data-key="tStart" value="120" step="any"></label>
+      <label>End time (s)<input type="number" data-key="tEnd" value="125" step="any"></label>
+      <label>Mass flow rate per injection (kg/s)<input type="number" data-key="mdot" value="0.0006" step="any" min="0"></label>
+      <label>Particles per parcel<input type="number" data-key="ppp" value="1000" step="any" min="0"></label>
+    </div>
+  </fieldset>
+
+  <fieldset>
+    <legend>Rosin-Rammler diameter distribution</legend>
+    <div class="dpm-grid">
+      <label>Min diameter (µm)<input type="number" data-key="dMin" value="10" step="any" min="0"></label>
+      <label>Mean diameter (µm)<input type="number" data-key="dMean" value="40" step="any" min="0"></label>
+      <label>Max diameter (µm)<input type="number" data-key="dMax" value="60" step="any" min="0"></label>
+      <label>Spread parameter<input type="number" data-key="spread" value="3.5" step="any" min="0"></label>
+      <label>Number of diameters<input type="number" data-key="nDiam" value="3" step="1" min="1"></label>
+    </div>
+  </fieldset>
+
+  <fieldset>
+    <legend>Injections (one per particle density)</legend>
+    <div id="dpm-injections"></div>
+    <button type="button" id="dpm-add">+ Add injection</button>
+  </fieldset>
+
+  <div id="dpm-output" aria-live="polite"></div>
+
+  <script>
+  (function () {
+    const root = document.getElementById("dpm-calc");
+    const injBox = root.querySelector("#dpm-injections");
+    const out = root.querySelector("#dpm-output");
+
+    const sci = (x) => (isFinite(x) ? x.toExponential(4) : "—");
+    const esc = (s) => String(s).replace(/[&<>"']/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
+
+    function addInjection(name, rho) {
+      const row = document.createElement("div");
+      row.className = "dpm-row";
+      row.innerHTML =
+        '<label>Name<input type="text" class="dpm-name"></label>' +
+        '<label>Density (kg/m³)<input type="number" class="dpm-rho" step="any" min="0"></label>' +
+        '<button type="button" class="dpm-remove" aria-label="Remove injection">Remove</button>';
+      row.querySelector(".dpm-name").value = name;
+      row.querySelector(".dpm-rho").value = rho;
+      row.querySelector(".dpm-remove").addEventListener("click", () => { row.remove(); calculate(); });
+      injBox.appendChild(row);
+    }
+
+    function particleMass(d, rho) {
+      return rho * Math.PI / 6 * d ** 3;
+    }
+
+    // Same discretisation as rosin_rammler_fractions() in dpm_particle_calculator.py
+    function rosinRammler(dMin, dMean, dMax, spread, n) {
+      const bins = n === 1 ? [dMin] : Array.from({ length: n }, (_, i) => dMin + (dMax - dMin) * i / (n - 1));
+      const edges = [dMin];
+      for (let i = 0; i < n - 1; i++) edges.push(0.5 * (bins[i] + bins[i + 1]));
+      edges.push(dMax);
+      const y = edges.map((d) => Math.exp(-((d / dMean) ** spread)));
+      const frac = bins.map((_, i) => y[i] - y[i + 1]);
+      const sum = frac.reduce((a, b) => a + b, 0);
+      return { bins, frac: frac.map((f) => f / sum) };
+    }
+
+    function calculate() {
+      const v = {};
+      root.querySelectorAll("input[data-key]").forEach((el) => { v[el.dataset.key] = parseFloat(el.value); });
+      const injections = Array.from(injBox.querySelectorAll(".dpm-row")).map((row, i) => ({
+        name: row.querySelector(".dpm-name").value.trim() || "particle_" + (i + 1),
+        rho: parseFloat(row.querySelector(".dpm-rho").value),
+      }));
+
+      const errors = [];
+      if (Object.values(v).some((x) => !isFinite(x))) errors.push("All fields must be numbers.");
+      if (!(v.tEnd > v.tStart)) errors.push("End time must be after start time.");
+      if (!(v.dMin > 0 && v.dMin < v.dMax)) errors.push("Diameters must satisfy 0 < min < max.");
+      if (!(v.dMean > 0)) errors.push("Mean diameter must be positive.");
+      if (!(v.spread > 0)) errors.push("Spread parameter must be positive.");
+      if (!(Number.isInteger(v.nDiam) && v.nDiam >= 1)) errors.push("Number of diameters must be a whole number ≥ 1.");
+      if (!(v.ppp > 0)) errors.push("Particles per parcel must be positive.");
+      if (!(v.mdot >= 0)) errors.push("Mass flow rate cannot be negative.");
+      if (injections.length === 0) errors.push("Add at least one injection.");
+      if (injections.some((inj) => !(inj.rho > 0))) errors.push("Every density must be positive.");
+      if (errors.length) {
+        out.innerHTML = errors.map((e) => '<p class="dpm-error">' + esc(e) + "</p>").join("");
+        return;
+      }
+
+      const duration = v.tEnd - v.tStart;
+      const totalMass = v.mdot * duration;
+      const { bins, frac } = rosinRammler(v.dMin * 1e-6, v.dMean * 1e-6, v.dMax * 1e-6, v.spread, v.nDiam);
+
+      let nTotal = 0;
+      const rows = injections.map((inj) => {
+        const n = bins.reduce((acc, d, i) => acc + totalMass * frac[i] / particleMass(d, inj.rho), 0);
+        nTotal += n;
+        return { ...inj, n, parcels: n / v.ppp };
+      });
+      const parcelsTotal = nTotal / v.ppp;
+
+      let html = '<div class="dpm-summary">' +
+        '<div class="dpm-stat"><span>Injection duration</span><strong>' + duration + " s</strong></div>" +
+        '<div class="dpm-stat"><span>Mass per injection</span><strong>' + sci(totalMass) + " kg</strong></div>" +
+        '<div class="dpm-stat"><span>Mass, all injections</span><strong>' + sci(totalMass * rows.length) + " kg</strong></div>" +
+        '<div class="dpm-stat"><span>Total particles</span><strong>' + sci(nTotal) + "</strong></div>" +
+        '<div class="dpm-stat"><span>Total parcels</span><strong>' + sci(parcelsTotal) + "</strong></div>" +
+        "</div>";
+
+      html += "<h4>Diameter distribution</h4><div class=\"dpm-table-wrap\"><table><thead><tr><th>Diameter (µm)</th><th>Mass fraction</th></tr></thead><tbody>";
+      bins.forEach((d, i) => { html += "<tr><td>" + (d * 1e6).toFixed(2) + "</td><td>" + frac[i].toFixed(4) + "</td></tr>"; });
+      html += "</tbody></table></div>";
+
+      html += "<h4>Particle and parcel counts</h4><div class=\"dpm-table-wrap\"><table><thead><tr>" +
+        "<th>Injection</th><th>Density (kg/m³)</th><th>Particles</th><th>Particles /s</th><th>Parcels</th><th>Parcels /s</th></tr></thead><tbody>";
+      rows.forEach((r) => {
+        html += "<tr><td>" + esc(r.name) + "</td><td>" + r.rho + "</td><td>" + sci(r.n) + "</td><td>" + sci(r.n / duration) +
+          "</td><td>" + sci(r.parcels) + "</td><td>" + sci(r.parcels / duration) + "</td></tr>";
+      });
+      html += '<tr class="dpm-total"><td>All injections</td><td>—</td><td>' + sci(nTotal) + "</td><td>" +
+        sci(nTotal / duration) + "</td><td>" + sci(parcelsTotal) + "</td><td>" + sci(parcelsTotal / duration) + "</td></tr>";
+      html += "</tbody></table></div>";
+
+      out.innerHTML = html;
+    }
+
+    [["particle_1", 1010], ["particle_2", 1400], ["particle_3", 1600]].forEach(([n, r]) => addInjection(n, r));
+    root.querySelector("#dpm-add").addEventListener("click", () => {
+      addInjection("particle_" + (injBox.children.length + 1), 1000);
+      calculate();
+    });
+    root.addEventListener("input", calculate);
+    calculate();
+  })();
+  </script>
+</div>

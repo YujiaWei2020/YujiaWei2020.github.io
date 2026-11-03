@@ -1,0 +1,13 @@
+{{/* Render a page-bundle file as highlighted code, optionally collapsed.
+     Usage: {{< resource-code file="script.py" lang="python" summary="Show source" >}} */}}
+{{- $file := .Get "file" -}}
+{{- with .Page.Resources.Get $file -}}
+{{- $code := highlight .Content ($.Get "lang") "" -}}
+{{- with $.Get "summary" -}}
+<details class="my-4"><summary class="cursor-pointer font-semibold">{{ . }}</summary>{{ $code }}</details>
+{{- else -}}
+{{ $code }}
+{{- end -}}
+{{- else -}}
+{{- errorf "resource-code: %q not found in page bundle %s" $file $.Page.File.Path -}}
+{{- end -}}
