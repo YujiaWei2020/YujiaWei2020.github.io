@@ -1,6 +1,6 @@
 ---
-title: Teaching
-summary: My courses
+title: Tools
+summary: My tools
 type: landing
 
 cascade:
@@ -11,12 +11,12 @@ cascade:
 
 sections:
   - block: collection
-    id: teaching
+    id: tools
     content:
-      title: Teaching
+      title: Tools
       filters:
         folders:
-          - teaching
+          - tools
     design:
       view: article-grid
       columns: 2
