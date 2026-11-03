@@ -16,6 +16,7 @@
     .dpm-calc th:first-child, .dpm-calc td:first-child { text-align: left; }
     .dpm-calc thead th { background: var(--dpm-muted); font-weight: 600; }
     .dpm-calc tr.dpm-total td { font-weight: 600; }
+    .dpm-calc .dpm-hint { font-size: .75rem; opacity: .7; line-height: 1.3; }
     .dpm-calc .dpm-error { color: #dc2626; font-weight: 600; margin: .5rem 0; }
     .dpm-calc .dpm-summary { display: grid; grid-template-columns: repeat(auto-fill, minmax(170px, 1fr)); gap: .75rem; margin-bottom: 1rem; }
     .dpm-calc .dpm-stat { border: 1px solid var(--dpm-border); border-radius: .5rem; padding: .6rem .8rem; }
@@ -31,7 +32,7 @@
       <label>Start time (s)<input type="number" data-key="tStart" value="120" step="any"></label>
       <label>End time (s)<input type="number" data-key="tEnd" value="125" step="any"></label>
       <label>Mass flow rate per injection (kg/s)<input type="number" data-key="mdot" value="0.0006" step="any" min="0"></label>
-      <label>Particles per parcel<input type="number" data-key="ppp" value="1000" step="any" min="0"></label>
+      <label>Particles per parcel<input type="number" data-key="ppp" value="1000" step="any" min="0"><small class="dpm-hint">For modelling only: each parcel represents this many real particles. Set to 1 to get the real (practical) particle count.</small></label>
     </div>
   </fieldset>
 

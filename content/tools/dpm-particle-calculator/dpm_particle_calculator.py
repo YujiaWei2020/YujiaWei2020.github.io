@@ -38,6 +38,7 @@ spread = 3.5
 n_diameters = 3
 
 # number of real particles represented by each parcel
+# (modelling only; set to 1 for the real, practical particle count)
 particles_per_parcel = 1000
 
 
